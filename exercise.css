@@ -1,0 +1,118 @@
+/*navigation*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*cover photo*/
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("r_2/kansikuva.jpg");
+    min-height: 75%;
+}
+
+/*logo*/
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 60%;
+    display: block;
+    vertical-align: middle;
+
+
+    }
+
+/*typo*/
+
+h1 {
+    font-size: 36px;
+    padding: 8px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+p{
+    font-size: 14px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+main{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+            grid-gap: .5em;
+        }
+
+
+article {
+    background: white;
+    position: relative;
+}
+
+.price, .discountprice {
+    position: absolute;
+    top:0;
+    margin:0;
+    padding:0.5em;
+
+}
+
+.price {
+
+    left:0;
+
+    background: white;
+}
+
+.discountprice {
+
+    right:0;
+    background: red;
+
+    }
+
+.hide {
+
+    display:none;
+}
+
+.strike{
+    text-decoration: line-through;
+}
